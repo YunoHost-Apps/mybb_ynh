@@ -44,6 +44,18 @@ ynh_clean_setup () {
 ynh_abort_if_errors
 
 #=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
+
+# Cleaning legacy permissions
+if ynh_legacy_permissions_exists; then
+	ynh_legacy_permissions_delete_all
+
+	ynh_app_setting_delete --app=$app --key=is_public
+fi
+
+#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Making sure dedicated system user exists..." --weight=1
@@ -62,13 +74,17 @@ then
 	#tmpdir="$(mktemp -d)"
 
 	#cp -a "$final_path/inc/config.php" "$tmpdir/config.php"
-
+	
 	ynh_secure_remove --file="$final_path"
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$final_path"
 	mv $final_path/Upload/* $final_path/
 	ynh_secure_remove --file="$final_path/Documentation"
 	ynh_secure_remove --file="$final_path/Upload"
+	# If install exist, remove it
+	if  [ -d "$final_path/install" ]; then
+		ynh_secure_remove --file="$final_path/install"
+	fi
 	#cp -a "$tmpdir/config.php" "$final_path/inc/config.php"
 fi
 
@@ -79,7 +95,7 @@ chown -R $app:www-data "$final_path"
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-# ynh_script_progression --message="Adding a configuration file..." --weight=1
+ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/config.php" --destination="$final_path/inc/config.php"
 
