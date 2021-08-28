@@ -19,7 +19,7 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 **Shipped version:** 1.0~ynh1
 
-**Demo:** https://demo.example.com
+**Demo:** https://demomybb.tk/
 
 ## Screenshots
 

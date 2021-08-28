@@ -15,7 +15,7 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 **Version incluse :** 1.0~ynh1
 
-**Démo :** https://demo.example.com
+**Démo :** https://demomybb.tk/
 
 ## Captures d'écran
 
