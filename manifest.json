@@ -1,0 +1,53 @@
+{
+    "name": "MyBB",
+    "id": "mybb",
+    "packaging_format": 1,
+    "description": {
+        "en": "Forum software",
+        "fr": "Forum open source et libre"
+    },
+    "version": "1.0~ynh1",
+    "url": "https://mybb.com/",
+    "upstream": {
+        "license": "LGPL-3.0",
+        "website": "https://mybb.com/",
+        "demo": "https://demo.example.com",
+        "admindoc": "https://docs.mybb.com/1.8/administration/",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/mybb/mybb"
+    },
+    "license": "LGPL-3.0",
+    "maintainer": {
+        "name": "John doe",
+        "email": "john.doe@example.com"
+    },
+    "requirements": {
+        "yunohost": ">= 4.2.4"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php7.3-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/mybb",
+                "default": "/mybb"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            }
+        ]
+    }
+}
