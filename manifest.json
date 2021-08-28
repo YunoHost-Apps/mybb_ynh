@@ -11,7 +11,7 @@
     "upstream": {
         "license": "LGPL-3.0",
         "website": "https://mybb.com/",
-        "demo": "https://demo.example.com",
+        "demo": "https://demomybb.tk/",
         "admindoc": "https://docs.mybb.com/1.8/administration/",
         "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/mybb/mybb"
