@@ -57,9 +57,9 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 	# Create a temporary directory
-	tmpdir="$(mktemp -d)"
+	#tmpdir="$(mktemp -d)"
 
-	cp -a "$final_path/inc/config.php" "$tmpdir/config.php"
+	#cp -a "$final_path/inc/config.php" "$tmpdir/config.php"
 
 	ynh_secure_remove --file="$final_path"
 	# Download, check integrity, uncompress and patch the source from app.src
@@ -67,12 +67,22 @@ then
 	mv $final_path/Upload/* $final_path/
 	ynh_secure_remove --file="$final_path/Documentation"
 	ynh_secure_remove --file="$final_path/Upload"
-	cp -a "$tmpdir/config.php" "$final_path/inc/config.php"
+	#cp -a "$tmpdir/config.php" "$final_path/inc/config.php"
 fi
 
 chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
+
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+# ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+ynh_add_config --template="../conf/config.php" --destination="$final_path/inc/config.php"
+
+chmod 666 "$final_path/inc/config.php"
+chown $app:$app "$final_path/inc/config.php"
 
 #=================================================
 # NGINX CONFIGURATION
