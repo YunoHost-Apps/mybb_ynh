@@ -23,7 +23,7 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ## Screenshots
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/screenshot.png)
 
 ## Disclaimers / important information
 

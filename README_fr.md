@@ -19,7 +19,7 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ## Captures d'écran
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
 
