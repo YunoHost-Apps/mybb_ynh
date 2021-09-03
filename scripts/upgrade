@@ -75,16 +75,16 @@ then
 
 	#cp -a "$final_path/inc/config.php" "$tmpdir/config.php"
 	
-	ynh_secure_remove --file="$final_path"
+	#ynh_secure_remove --file="$final_path"
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$final_path"
-	mv $final_path/Upload/* $final_path/
-	ynh_secure_remove --file="$final_path/Documentation"
-	ynh_secure_remove --file="$final_path/Upload"
+	#mv $final_path/Upload/* $final_path/
+	#ynh_secure_remove --file="$final_path/Documentation"
+	#ynh_secure_remove --file="$final_path/Upload"
 	# If install exist, remove it
-	if  [ -d "$final_path/install" ]; then
-		ynh_secure_remove --file="$final_path/install"
-	fi
+	#if  [ -d "$final_path/install" ]; then
+	#	ynh_secure_remove --file="$final_path/install"
+	#fi
 	#cp -a "$tmpdir/config.php" "$final_path/inc/config.php"
 fi
 
