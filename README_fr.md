@@ -27,7 +27,8 @@ MyBB is the free and open source forum software powering thousands of engaging, 
     * The database credentials are send to the admin be email.
 
 * How to upgrade:
-    * `https://www.domain.ltd/mybb/install/upgrade.php` and follow the post install.
+	* Remove the lock file `sudo rm /var/www/mybb/install/lock`
+    * and follow the post install `https://www.domain.ltd/mybb/install/upgrade.php`
 
 ## Documentations et ressources
 
