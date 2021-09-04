@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Shipped version:** 1.8.27~ynh1
+**Shipped version:** 1.8.27~ynh2
 
 **Demo:** https://demomybb.tk/
 
@@ -31,7 +31,8 @@ MyBB is the free and open source forum software powering thousands of engaging, 
     * The database credentials are send to the admin be email.
 
 * How to upgrade:
-    * `https://www.domain.ltd/mybb/install/upgrade.php` and follow the post install.
+	* Remove the lock file `sudo rm /var/www/mybb/install/lock`
+    * and follow the post install `https://www.domain.ltd/mybb/install/upgrade.php`
 
 ## Documentation and resources
 
