@@ -6,7 +6,7 @@
         "en": "Forum software",
         "fr": "Forum open source et libre"
     },
-    "version": "1.8.27~ynh1",
+    "version": "1.8.27~ynh2",
     "url": "https://mybb.com/",
     "upstream": {
         "license": "LGPL-3.0-only",
