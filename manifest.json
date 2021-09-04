@@ -6,20 +6,19 @@
         "en": "Forum software",
         "fr": "Forum open source et libre"
     },
-    "version": "1.0~ynh1",
+    "version": "1.8.27~ynh1",
     "url": "https://mybb.com/",
     "upstream": {
-        "license": "LGPL-3.0",
+        "license": "LGPL-3.0-only",
         "website": "https://mybb.com/",
         "demo": "https://demomybb.tk/",
         "admindoc": "https://docs.mybb.com/1.8/administration/",
-        "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/mybb/mybb"
     },
-    "license": "LGPL-3.0",
+    "license": "LGPL-3.0-only",
     "maintainer": {
-        "name": "John doe",
-        "email": "john.doe@example.com"
+        "name": "",
+        "email": ""
     },
     "requirements": {
         "yunohost": ">= 4.2.4"

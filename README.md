@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Shipped version:** 1.0~ynh1
+**Shipped version:** 1.8.27~ynh1
 
 **Demo:** https://demomybb.tk/
 
@@ -27,23 +27,15 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ## Disclaimers / important information
 
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
+* How to post-install:
+    * The database credentials are send to the admin be email.
 
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
+* How to upgrade:
+    * `https://www.domain.ltd/mybb/install/upgrade.php` and follow the post install.
 
 ## Documentation and resources
 
 * Official app website: https://mybb.com/
-* Official user documentation: https://yunohost.org/apps
 * Official admin documentation: https://docs.mybb.com/1.8/administration/
 * Upstream app code repository: https://github.com/mybb/mybb
 * YunoHost documentation for this app: https://yunohost.org/app_mybb
