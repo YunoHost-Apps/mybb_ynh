@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/mybb/mybb/releases/download/mybb_1827/mybb_1827.zip
-SOURCE_SUM=25a8414d7ee7338548906e0077330f5f7342212a68890a91182329d9cea8ea30
+SOURCE_URL=https://github.com/mybb/mybb/releases/download/mybb_1829/mybb_1829.zip
+SOURCE_SUM=446f0276ce2c63a83e07cea8429ba2ecd304a5f764d9676927eb022c75cb4998
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=false
