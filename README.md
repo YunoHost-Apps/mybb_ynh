@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Shipped version:** 1.8.27~ynh2
+**Shipped version:** 1.8.29~ynh1
 
 **Demo:** https://demomybb.tk/
 
