@@ -13,7 +13,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Version incluse :** 1.8.29~ynh1
+**Version incluse :** 1.8.29~ynh2
 
 **Démo :** https://demomybb.tk/
 
