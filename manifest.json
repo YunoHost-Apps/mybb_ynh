@@ -13,7 +13,8 @@
         "website": "https://mybb.com/",
         "demo": "https://demomybb.tk/",
         "admindoc": "https://docs.mybb.com/1.8/administration/",
-        "code": "https://github.com/mybb/mybb"
+        "code": "https://github.com/mybb/mybb",
+        "cpe": "cpe:2.3:a:mybb:mybb"
     },
     "license": "LGPL-3.0-only",
     "maintainer": {
@@ -30,7 +31,7 @@
         "mysql"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
                 "type": "domain"
