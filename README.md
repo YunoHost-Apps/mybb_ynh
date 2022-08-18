@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # MyBB for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![Working status](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)  
 [![Install MyBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mybb)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -17,13 +17,14 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Shipped version:** 1.8.30~ynh1
+**Shipped version:** 1.8.30~ynh2
+
 
 **Demo:** https://demomybb.tk/
 
 ## Screenshots
 
-![](./doc/screenshots/screenshot.png)
+![Screenshot of MyBB](./doc/screenshots/screenshot.png)
 
 ## Disclaimers / important information
 
@@ -36,21 +37,22 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ## Documentation and resources
 
-* Official app website: https://mybb.com/
-* Official admin documentation: https://docs.mybb.com/1.8/administration/
-* Upstream app code repository: https://github.com/mybb/mybb
-* YunoHost documentation for this app: https://yunohost.org/app_mybb
-* Report a bug: https://github.com/YunoHost-Apps/mybb_ynh/issues
+* Official app website: <https://mybb.com/>
+* Official admin documentation: <https://docs.mybb.com/1.8/administration/>
+* Upstream app code repository: <https://github.com/mybb/mybb>
+* YunoHost documentation for this app: <https://yunohost.org/app_mybb>
+* Report a bug: <https://github.com/YunoHost-Apps/mybb_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/mybb_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/mybb_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade mybb -u https://github.com/YunoHost-Apps/mybb_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
