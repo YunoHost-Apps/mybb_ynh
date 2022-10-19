@@ -93,14 +93,6 @@ chown -R $app:www-data "$final_path"
 chmod 775 $final_path/cache/ $final_path/cache/themes/ $final_path/uploads/ $final_path/uploads/avatars/
 
 #=================================================
-# NGINX CONFIGURATION
-#=================================================
-ynh_script_progression --message="Configuring NGINX web server..." --weight=2
-
-# Create a dedicated NGINX config
-ynh_add_nginx_config
-
-#=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Configuring PHP-FPM..." --weight=3
@@ -108,6 +100,14 @@ ynh_script_progression --message="Configuring PHP-FPM..." --weight=3
 # Create a dedicated PHP-FPM config
 ynh_add_fpm_config
 phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+
+#=================================================
+# NGINX CONFIGURATION
+#=================================================
+ynh_script_progression --message="Configuring NGINX web server..." --weight=2
+
+# Create a dedicated NGINX config
+ynh_add_nginx_config
 
 #=================================================
 # ADD A CONFIGURATION
