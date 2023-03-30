@@ -1,7 +1,0 @@
-SOURCE_URL=https://github.com/mybb/mybb/releases/download/mybb_1831/mybb_1831.zip
-SOURCE_SUM=e88354f10893512ea8f426aff9d6a48f7e2cb20bd3988b001c59c9f29084c2f1
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=zip
-SOURCE_IN_SUBDIR=false
-SOURCE_FILENAME=mybb
-SOURCE_EXTRACT=true
