@@ -26,15 +26,6 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ![Screenshot of MyBB](./doc/screenshots/screenshot.png)
 
-## Disclaimers / important information
-
-* How to post-install:
-    * The database credentials are send to the admin be email.
-
-* How to upgrade:
-	* Remove the lock file `sudo rm /var/www/mybb/install/lock`
-    * and follow the post install `https://www.domain.ltd/mybb/install/upgrade.php`
-
 ## Documentation and resources
 
 * Official app website: <https://mybb.com/>
