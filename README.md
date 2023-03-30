@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # MyBB for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![Working status](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![Working status](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)
+
 [![Install MyBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mybb)
 
 *[Lire ce readme en français.](./README_fr.md)*
