@@ -5,15 +5,16 @@ It shall NOT be edited by hand.
 
 # MyBB pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)
+
 [![Installer MyBB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mybb)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer MyBB rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer MyBB rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
@@ -21,9 +22,9 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 **Démo :** https://demomybb.tk/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de MyBB](./doc/screenshots/screenshot.png)
+![Capture d’écran de MyBB](./doc/screenshots/screenshot.png)
 
 ## Avertissements / informations importantes
 
@@ -36,9 +37,9 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://mybb.com/>
-* Documentation officielle de l'admin : <https://docs.mybb.com/1.8/administration/>
-* Dépôt de code officiel de l'app : <https://github.com/mybb/mybb>
+* Site officiel de l’app : <https://mybb.com/>
+* Documentation officielle de l’admin : <https://docs.mybb.com/1.8/administration/>
+* Dépôt de code officiel de l’app : <https://github.com/mybb/mybb>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_mybb>
 * Signaler un bug : <https://github.com/YunoHost-Apps/mybb_ynh/issues>
 
@@ -54,4 +55,4 @@ ou
 sudo yunohost app upgrade mybb -u https://github.com/YunoHost-Apps/mybb_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
