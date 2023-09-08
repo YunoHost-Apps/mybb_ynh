@@ -17,7 +17,7 @@ admindoc = "https://docs.mybb.com/1.8/administration/"
 code = "https://github.com/mybb/mybb"
 
 [integration]
-yunohost = ">= 11.1.15"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -52,7 +52,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server php8.0-mysql php8.0-xml"
+    packages = "mariadb-server, php8.0-mysql, php8.0-xml"
 
     [resources.database]
     type = "mysql"
