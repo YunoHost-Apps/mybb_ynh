@@ -31,7 +31,7 @@ MyBB is the free and open source forum software powering thousands of engaging, 
 * Official app website: <https://mybb.com/>
 * Official admin documentation: <https://docs.mybb.com/1.8/administration/>
 * Upstream app code repository: <https://github.com/mybb/mybb>
-* YunoHost documentation for this app: <https://yunohost.org/app_mybb>
+* YunoHost Store: <https://apps.yunohost.org/app/mybb>
 * Report a bug: <https://github.com/YunoHost-Apps/mybb_ynh/issues>
 
 ## Developer info
