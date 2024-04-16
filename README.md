@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install MyBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mybb)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install MyBB quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -18,7 +18,7 @@ It shall NOT be edited by hand.
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Shipped version:** 1.8.31~ynh1
+**Shipped version:** 1.8.31~ynh2
 
 **Demo:** <https://demomybb.tk/>
 

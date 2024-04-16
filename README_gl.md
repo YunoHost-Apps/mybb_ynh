@@ -18,7 +18,7 @@ NON debe editarse manualmente.
 
 MyBB is the free and open source forum software powering thousands of engaging, vibrant, and unique communities across the internet.
 
-**Versión proporcionada:** 1.8.31~ynh1
+**Versión proporcionada:** 1.8.31~ynh2
 
 **Demo:** <https://demomybb.tk/>
 
