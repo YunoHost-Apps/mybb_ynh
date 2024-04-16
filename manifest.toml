@@ -5,7 +5,7 @@ name = "MyBB"
 description.en = "Forum software"
 description.fr = "Forum open source et libre"
 
-version = "1.8.31~ynh1"
+version = "1.8.31~ynh2"
 
 maintainers = []
 
