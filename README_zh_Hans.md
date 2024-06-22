@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 MyBB
+# YunoHost 上的 MyBB
 
 [![集成程度](https://dash.yunohost.org/integration/mybb.svg)](https://dash.yunohost.org/appci/app/mybb) ![工作状态](https://ci-apps.yunohost.org/ci/badges/mybb.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/mybb.maintain.svg)
 
