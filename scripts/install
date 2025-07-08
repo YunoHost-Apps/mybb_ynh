@@ -17,8 +17,6 @@ mv $install_dir/Upload/* $install_dir/
 ynh_safe_rm "$install_dir/Documentation"
 ynh_safe_rm "$install_dir/Upload"
 
-#chmod 666 $install_dir/inc/config.php $install_dir/inc/settings.php
-
 chmod -R 775 $install_dir/cache/ $install_dir/uploads/
 
 #=================================================
