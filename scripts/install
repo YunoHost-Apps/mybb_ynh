@@ -1,49 +1,38 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
+
+ynh_app_setting_set --key=php_upload_max_filesize --value=100M
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=3
+ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
-mv $install_dir/Upload/* $install_dir/
-ynh_secure_remove --file="$install_dir/Documentation"
-ynh_secure_remove --file="$install_dir/Upload"
 
-chmod 750 "$install_dir"
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-#chmod 666 $install_dir/inc/config.php $install_dir/inc/settings.php
-chmod 775 $install_dir/cache/ $install_dir/cache/themes/ $install_dir/uploads/ $install_dir/uploads/avatars/
+mv $install_dir/Upload/* $install_dir/
+ynh_safe_rm "$install_dir/Documentation"
+ynh_safe_rm "$install_dir/Upload"
+
+mv $install_dir/inc/config.default.php $install_dir/inc/config.php
+chmod -R 0777 $install_dir/cache $install_dir/uploads $install_dir/inc/settings.php $install_dir/inc/config.php
 
 #=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Configuring PHP-FPM..." --weight=3
+ynh_script_progression "Configuring PHP-FPM..."
 
 # Create a dedicated PHP-FPM config
-ynh_add_fpm_config --usage=low --footprint=low
-
-#=================================================
-# NGINX CONFIGURATION
-#=================================================
-ynh_script_progression --message="Configuring NGINX web server..." --weight=2
+ynh_config_add_phpfpm
 
 # Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
