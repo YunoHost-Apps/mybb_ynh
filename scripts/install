@@ -18,7 +18,7 @@ ynh_safe_rm "$install_dir/Documentation"
 ynh_safe_rm "$install_dir/Upload"
 
 mv $install_dir/inc/config.default.php $install_dir/inc/config.php
-chmod -R 0777 $install_dir/cache $install_dir/uploads $install_dir/inc/settings.php $install_dir/inc/config.php
+chmod -R 0775 $install_dir/cache $install_dir/uploads $install_dir/inc/settings.php $install_dir/inc/config.php
 
 #=================================================
 # PHP-FPM CONFIGURATION
