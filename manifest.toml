@@ -5,7 +5,7 @@ name = "MyBB"
 description.en = "Forum software"
 description.fr = "Forum open source et libre"
 
-version = "1.8.31~ynh2"
+version = "1.8.39~ynh1"
 
 maintainers = []
 
@@ -17,11 +17,14 @@ admindoc = "https://docs.mybb.com/1.8/administration/"
 code = "https://github.com/mybb/mybb"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
+
 ldap = false
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -40,8 +43,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/mybb/mybb/releases/download/mybb_1831/mybb_1831.zip"
-        sha256 = "e88354f10893512ea8f426aff9d6a48f7e2cb20bd3988b001c59c9f29084c2f1"
+        url = "https://github.com/mybb/mybb/releases/download/mybb_1839/mybb_1839.zip"
+        sha256 = "04537bc28d924454dbbe6206962a122b3c5c20ffa3b94bec4f5c654a9d01c2cf"
         in_subdir = false
         autoupdate.strategy = "latest_github_release"
         # This recreates the x.y.zz version number
@@ -50,12 +53,13 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+    group = "www-data:r-x"
 
     [resources.permissions]
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, php8.0-mysql, php8.0-xml"
+    packages = "mariadb-server, php8.4-mysql, php8.4-xml"
 
     [resources.database]
     type = "mysql"
