@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
 ynh_app_setting_set_default --key=php_upload_max_filesize --value=100M
@@ -12,6 +11,7 @@ ynh_script_progression "Upgrading source files..."
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir" --keep="inc/config.php"
+
 #This removes the lock to do the post upgrade process.
 #ynh_safe_rm "$install_dir/install/lock"
 
